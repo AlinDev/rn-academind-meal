@@ -11,7 +11,7 @@ const ss = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
-        align: 'center',
+        alignItems: 'center',
     }
 });
 export default FavoritesScreen;
