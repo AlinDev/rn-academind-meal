@@ -3,9 +3,6 @@ import { View, Text, StyleSheet, FlatList, Platform, TouchableOpacity } from 're
 import { CATEGORIES } from '../data/dummy-data'
 import Colors from '../constants/Colors'
 const CategoriesScreen = props => {
-    console.log(CATEGORIES);
-
-
     const renderGridItem = (itemData) => {
         return <TouchableOpacity style={ss.gridItem} onPress={() => {
             props.navigation.navigate({
@@ -28,11 +25,6 @@ const CategoriesScreen = props => {
 };
 CategoriesScreen.navigationOptions = {
     headerTitle: 'Meal Categories',
-    headerStyle: {
-        backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : '',
-
-    },
-    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor
 };
 
 const ss = StyleSheet.create({
